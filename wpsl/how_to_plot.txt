@@ -1,0 +1,12 @@
+#first of all, store the data in the following form for every data output
+file<<"set object rect from"<<lattice_element.x<<","<<lattice_element.y<<"to"<<lattice_element.x+lattice_element.width<<","<<lattice_element.y+lattice_element.height<<endl;
+#also put the following lines at the end of the plot
+file<<"set xr[0:1]"<<endl; //xrange scaling
+file<<"set yr[0:1]"<<endl;
+
+
+#To plot the file do the following
+#Type-
+load 'file_name.dat'
+#Then type-
+plot 1
